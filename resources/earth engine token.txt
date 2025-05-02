@@ -1,0 +1,6 @@
+earth engine token
+4/1Ab_5qlkLijgBKe-4K5o-dz46BJy1PV1knuSPe1b8PHQJ8bA3iTt7ubv4OyQ
+
+project id
+ee-testing-458522
+ee.Initialize(project="ee-testing-458522")
