@@ -35,21 +35,6 @@ To run this project locally, you need:
    ```
 4. Downloaded `.tif` files will be saved in the `data/` folder (ignored by Git).
 
-### Adding the Project Image
-
-To display the remote sensing image at the top of the README:
-
-1. Create a folder named `assets/` in your GitHub repository root directory.
-2. Place your image file there (e.g., `cover.png`).
-3. Use the following Markdown to embed it at the top:
-
-   ```markdown
-   <p align="center">
-     <img src="assets/cover.png" alt="Remote Sensing Banner" width="80%">
-   </p>
-   ```
-
----
 
 ## 🤝 How to Contribute
 
@@ -81,12 +66,9 @@ If you’re working with new environmental indicators, please update the `README
 
 ### Vegetation and Land Use Indices
 
-| Indicator | Description | Source |
-| --------- | ----------- | ------ |
-|           |             |        |
-
-| **NDVI (Normalized Difference Vegetation Index)** | Measures vegetation health using `(NIR - Red) / (NIR + Red)`. Values near +1 indicate healthy vegetation.     | Landsat 9 (Bands 5 and 4) |
+| Indicator                                         | Description                                                                                                   | Source                    |
 | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| **NDVI (Normalized Difference Vegetation Index)** | Measures vegetation health using `(NIR - Red) / (NIR + Red)`. Values near +1 indicate healthy vegetation.     | Landsat 9 (Bands 5 and 4) |
 | **NDWI (Normalized Difference Water Index)**      | Detects surface water using `(Green - NIR) / (Green + NIR)`. Useful for wetland and water mapping.            | Landsat 9 (Bands 3 and 5) |
 | **NDBI (Normalized Difference Built-up Index)**   | Identifies built-up areas using `(SWIR - NIR) / (SWIR + NIR)`. Higher values imply more urban infrastructure. | Landsat 9 (Bands 6 and 5) |
 | **LST (Land Surface Temperature)**                | Estimates land temperature in Kelvin using `ST_B10 * 0.00341802 + 149.0`.                                     | Landsat 9 Thermal Band 10 |
