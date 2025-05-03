@@ -171,7 +171,6 @@ FEMA and other federal agencies publish a wide array of disaster-related dataset
 | **Child Opportunity Index (COI)**               | Composite measure of neighborhood-level opportunity for children       | Tract           | diversitydatakids.org                                      |
 | **Social Vulnerability Index (SVI)**            | CDC’s metric of community resilience to disasters and hardship         | Tract, County   | CDC/ATSDR                                                  |
 | **Opportunity Atlas (OA)**                      | Economic mobility measures by childhood neighborhood                   | Tract           | opportunityatlas.org                                       |
-| **Flood Insurance Claims**                      | Number and payout of claims under the National Flood Insurance Program | ZIP, County     | FEMA / OpenFEMA.gov                                        |
 | **Zoning Restrictions (National Zoning Atlas)** | Classifies local zoning codes by land use and restrictiveness          | Municipality    | [https://www.zoningatlas.org](https://www.zoningatlas.org) |
 | **Healthcare Access Scores**                    | Distance to hospitals, emergency care, or clinics                      | Tract/ZIP       | HRSA, ACS-derived                                          |
 
@@ -185,4 +184,3 @@ FEMA and other federal agencies publish a wide array of disaster-related dataset
 
 ---
 
-> These metrics support analyses of environmental injustice, child health disparities, urban heat vulnerability, and disaster resilience across U.S. census tracts. Future development phases will test and integrate select indicators into the broader COI framework.
