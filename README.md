@@ -1,6 +1,4 @@
-# EarthExplorer
-
-Testing the use of Google Earth Engine to explore satellite remote sensing data
+EarthExplorer is a research tool for extracting and analyzing satellite-derived environmental indicators using Google Earth Engine and Python. This project generates monthly, high-resolution geospatial datasets across the U.S. — including NDVI, surface temperature, air pollution, flood risk, and more — and links them to census tracts for integration with social indices like the Child Opportunity Index (COI), Social Vulnerability Index (SVI), and Opportunity Atlas (OA). The goal is to support environmental justice, public health research, and data-driven policymaking by bridging remote sensing and social science.
 
 ---
 
@@ -171,7 +169,6 @@ FEMA and other federal agencies publish a wide array of disaster-related dataset
 | **Child Opportunity Index (COI)**               | Composite measure of neighborhood-level opportunity for children       | Tract           | diversitydatakids.org                                      |
 | **Social Vulnerability Index (SVI)**            | CDC’s metric of community resilience to disasters and hardship         | Tract, County   | CDC/ATSDR                                                  |
 | **Opportunity Atlas (OA)**                      | Economic mobility measures by childhood neighborhood                   | Tract           | opportunityatlas.org                                       |
-| **Flood Insurance Claims**                      | Number and payout of claims under the National Flood Insurance Program | ZIP, County     | FEMA / OpenFEMA.gov                                        |
 | **Zoning Restrictions (National Zoning Atlas)** | Classifies local zoning codes by land use and restrictiveness          | Municipality    | [https://www.zoningatlas.org](https://www.zoningatlas.org) |
 | **Healthcare Access Scores**                    | Distance to hospitals, emergency care, or clinics                      | Tract/ZIP       | HRSA, ACS-derived                                          |
 
@@ -183,6 +180,7 @@ FEMA and other federal agencies publish a wide array of disaster-related dataset
 
 ---
 
+<<<<<<< HEAD
 ### 🛰️ Satellite-Derived Proxies
 
 | Proxy                    | Description                                             | Source                             |
@@ -206,3 +204,5 @@ FEMA and other federal agencies publish a wide array of disaster-related dataset
 
 
 
+=======
+>>>>>>> 5d30ba7320242f9a74e483a70836bebedcee6379
