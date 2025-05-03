@@ -1,6 +1,3 @@
-# EarthExplorer
-
-Testing the use of Google Earth Engine to explore satellite remote sensing data
 
 ---
 
