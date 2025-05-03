@@ -175,8 +175,6 @@ FEMA and other federal agencies publish a wide array of disaster-related dataset
 | **Zoning Restrictions (National Zoning Atlas)** | Classifies local zoning codes by land use and restrictiveness          | Municipality    | [https://www.zoningatlas.org](https://www.zoningatlas.org) |
 | **Healthcare Access Scores**                    | Distance to hospitals, emergency care, or clinics                      | Tract/ZIP       | HRSA, ACS-derived                                          |
 
----
-
 | Indicator          | Description                                  | GEE Source / Method               |
 | ------------------ | -------------------------------------------- | --------------------------------- |
 | **Elevation**      | Absolute elevation in meters above sea level | `USGS/SRTMGL1_003`, `MERIT DEM`   |
@@ -185,4 +183,26 @@ FEMA and other federal agencies publish a wide array of disaster-related dataset
 
 ---
 
-> These metrics support analyses of environmental injustice, child health disparities, urban heat vulnerability, and disaster resilience across U.S. census tracts. Future development phases will test and integrate select indicators into the broader COI framework.
+### 🛰️ Satellite-Derived Proxies
+
+| Proxy                    | Description                                             | Source                             |
+|--------------------------|---------------------------------------------------------|------------------------------------|
+| **Intersection Density** | High street and node density correlates with walkability| Derived from OpenStreetMap (OSM)   |
+| **Land Use Diversity**   | Presence of mixed-use (residential + commercial) zoning | OSM, zoning data                   |
+| **Impervious Surface**   | Maps roads, sidewalks, and buildings                    | USGS/NLCD, MODIS, NDBI             |
+| **Green Space Proximity**| Distance to parks and recreational areas                | Landsat NDVI, OSM parks            |
+| **Nighttime Lights**     | Indicates commercial corridors active at night          | VIIRS/DNB                          |
+
+### 🚌 Transit Accessibility Datasets (Non-Satellite)
+
+| Dataset / Tool                     | Description                                             | Source                             |
+|------------------------------------|---------------------------------------------------------|------------------------------------|
+| **AllTransit Metrics**             | Transit frequency, access, and walkability scores       | [alltransit.cnt.org](https://alltransit.cnt.org/) |
+| **EPA Smart Location Database**    | Tract-level walk and transit scores, built env. metrics | U.S. EPA                           |
+| **Walk Score API**                 | Popular walk/transit score (limited free access)        | [walkscore.com](https://www.walkscore.com/) |
+| **OpenStreetMap (OSM)**            | Global map of streets, sidewalks, paths, and transit    | Open source                        |
+| **GTFS Feeds**                     | Transit agency route and schedule data                  | Local agencies / transit.land      |
+| **LEHD LODES Data**                | Home-to-work commute flows by block                     | U.S. Census Bureau                 |
+
+
+
