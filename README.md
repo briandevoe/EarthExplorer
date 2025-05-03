@@ -180,7 +180,6 @@ FEMA and other federal agencies publish a wide array of disaster-related dataset
 
 ---
 
-<<<<<<< HEAD
 ### 🛰️ Satellite-Derived Proxies
 
 | Proxy                    | Description                                             | Source                             |
@@ -204,5 +203,3 @@ FEMA and other federal agencies publish a wide array of disaster-related dataset
 
 
 
-=======
->>>>>>> 5d30ba7320242f9a74e483a70836bebedcee6379
