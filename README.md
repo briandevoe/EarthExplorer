@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="assets/cover.png" alt="Remote Sensing of Flooding in New Orleans" width="80%">
-</p>
-
 # EarthExplorer
 
 Testing the use of Google Earth Engine to explore satellite remote sensing data
@@ -85,9 +81,12 @@ If you’re working with new environmental indicators, please update the `README
 
 ### Vegetation and Land Use Indices
 
-| Indicator                                         | Description                                                                                                   | Source                    |
-| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| Indicator | Description | Source |
+| --------- | ----------- | ------ |
+|           |             |        |
+
 | **NDVI (Normalized Difference Vegetation Index)** | Measures vegetation health using `(NIR - Red) / (NIR + Red)`. Values near +1 indicate healthy vegetation.     | Landsat 9 (Bands 5 and 4) |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------- |
 | **NDWI (Normalized Difference Water Index)**      | Detects surface water using `(Green - NIR) / (Green + NIR)`. Useful for wetland and water mapping.            | Landsat 9 (Bands 3 and 5) |
 | **NDBI (Normalized Difference Built-up Index)**   | Identifies built-up areas using `(SWIR - NIR) / (SWIR + NIR)`. Higher values imply more urban infrastructure. | Landsat 9 (Bands 6 and 5) |
 | **LST (Land Surface Temperature)**                | Estimates land temperature in Kelvin using `ST_B10 * 0.00341802 + 149.0`.                                     | Landsat 9 Thermal Band 10 |
@@ -122,6 +121,8 @@ If you’re working with new environmental indicators, please update the `README
 
 ## 🌱 Potential Indicators for Expansion
 
+This section outlines additional environmental and social indicators that can be integrated into the EarthExplorer project. Many of these are available through Google Earth Engine or public datasets and align well with measures like the Child Opportunity Index (COI), Social Vulnerability Index (SVI), and Opportunity Atlas (OA).
+
 These are additional spatial indicators under consideration to enhance linkage with the Child Opportunity Index (COI). Most are available from public satellite data via Google Earth Engine and can be computed monthly and at high resolution.
 
 ### 🌊 Hydrologic & Environmental Hazards
@@ -153,7 +154,46 @@ These are additional spatial indicators under consideration to enhance linkage w
 
 ---
 
-### 🏔️ Terrain & Elevation
+### 🧭 Urban & Land Use Patterns
+
+| Indicator                   | Description                                              | Source                                  |
+| --------------------------- | -------------------------------------------------------- | --------------------------------------- |
+| **Impervious Surface Area** | Maps urban sprawl and infrastructure coverage            | `USGS/NLCD`, `Global Urban Footprint`   |
+| **Green Space Access**      | Analyzes distance to nearest public parks/vegetated land | Derived from NDVI or land cover rasters |
+| **Zoning Classification**   | Differentiates residential, commercial, and mixed zones  | National Zoning Atlas (in progress)     |
+
+### 🌬️ Additional Atmospheric & Air Quality Metrics
+
+| Indicator                       | Description                                                | GEE Source / Status                       |
+| ------------------------------- | ---------------------------------------------------------- | ----------------------------------------- |
+| **PM10**                        | Larger particulates that impact respiratory health         | Proxy via AOD or modeled datasets         |
+| **VOCs**                        | Volatile organic compounds contributing to ozone formation | Under research; limited availability      |
+| **Surface-Level PM Estimation** | Blend AOD with weather reanalysis to model exposure        | Modeled from Sentinel/MODIS + meteorology |
+
+### 📊 Social Indicators and Public Datasets
+
+FEMA and other federal agencies publish a wide array of disaster-related datasets that are relevant to socioeconomic and environmental justice research. These datasets can be joined to census tracts or ZIP codes and used to examine disaster resilience, recovery inequality, and infrastructure disparities.
+
+#### 🚨 FEMA and Disaster Claims Datasets
+
+| Indicator                      | Description                                                                | Geography Level | Source                                                                                            |
+| ------------------------------ | -------------------------------------------------------------------------- | --------------- | ------------------------------------------------------------------------------------------------- |
+| **Flood Insurance Claims**     | Historical NFIP claims and payouts by ZIP or county                        | ZIP, County     | [FEMA/NFIP Claims](https://www.fema.gov/openfema-data-page/fima-nfip-redacted-claims)             |
+| **Disaster Declarations**      | Official FEMA disaster declarations including event type, region, and date | County          | [FEMA Declarations](https://www.fema.gov/api/open/v2/DisasterDeclarationsSummaries)               |
+| **Hazard Mitigation Grants**   | Grants for rebuilding and resilience efforts by project and location       | County          | [FEMA Mitigation Projects](https://www.fema.gov/openfema-data-page/hma-mitigated-properties)      |
+| **Fire Management Assistance** | Declarations and assistance for wildfire suppression and damage            | County          | [FEMA Fire Data](https://www.fema.gov/openfema-data-page/fire-management-assistance-declarations) |
+| **Individual Assistance Data** | Data on federal housing, repair, and disaster assistance                   | County          | [FEMA IA Program](https://www.fema.gov/data-visualization/individual-assistance-program)          |
+
+| Indicator                                       | Description                                                            | Geography Level | Source                                                     |
+| ----------------------------------------------- | ---------------------------------------------------------------------- | --------------- | ---------------------------------------------------------- |
+| **Child Opportunity Index (COI)**               | Composite measure of neighborhood-level opportunity for children       | Tract           | diversitydatakids.org                                      |
+| **Social Vulnerability Index (SVI)**            | CDC’s metric of community resilience to disasters and hardship         | Tract, County   | CDC/ATSDR                                                  |
+| **Opportunity Atlas (OA)**                      | Economic mobility measures by childhood neighborhood                   | Tract           | opportunityatlas.org                                       |
+| **Flood Insurance Claims**                      | Number and payout of claims under the National Flood Insurance Program | ZIP, County     | FEMA / OpenFEMA.gov                                        |
+| **Zoning Restrictions (National Zoning Atlas)** | Classifies local zoning codes by land use and restrictiveness          | Municipality    | [https://www.zoningatlas.org](https://www.zoningatlas.org) |
+| **Healthcare Access Scores**                    | Distance to hospitals, emergency care, or clinics                      | Tract/ZIP       | HRSA, ACS-derived                                          |
+
+---
 
 | Indicator          | Description                                  | GEE Source / Method               |
 | ------------------ | -------------------------------------------- | --------------------------------- |
