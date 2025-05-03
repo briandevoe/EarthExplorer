@@ -16,7 +16,7 @@ ee.Initialize(project="ee-testing-458522")  # replace with your GCP project ID
 # 1. Settings: States and Monthly Ranges
 # ---------------------------------------------------------------------
 states = [
-    "Connecticut", "Maine", "Massachusetts", "New Hampshire", "Rhode Island", "Vermont"
+    "Massachusetts", "New Hampshire"
 ]  # New England states
 
 # Generate all months in 2024
@@ -123,7 +123,7 @@ for state in states:
             "CO": export_to_drive(co, "CO"),
             "NO2": export_to_drive(no2, "NO2"),
             "OZONE": export_to_drive(ozone, "OZONE"),
-            "AOD": export_to_drive(aod, "AOD"),
+            #"AOD": export_to_drive(aod, "AOD"),
             "NightLights": export_to_drive(lights, "NightLights")
         }
 
@@ -148,6 +148,7 @@ for state in states:
                 print(f"⬇️ Downloading {file['title']}...")
                 file.GetContentFile(os.path.join(download_folder, file['title']))
                 print(f"🗑️ Deleting {file['title']} from Drive...")
-                file.Delete()
+                drive.auth.service.files().delete(fileId=file['id']).execute()
+                #file.Delete()
 
         print(f"✅ Completed: {state}, {start_date} to {end_date}\n")
