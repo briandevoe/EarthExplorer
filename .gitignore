@@ -176,5 +176,6 @@ cython_debug/
 # Custom: Do not commit credentials or data exports
 client_secrets.json
 credentials.json
+earth engine token.txt
 data/
 

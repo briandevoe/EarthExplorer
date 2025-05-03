@@ -1,6 +1,3 @@
-# EarthExplorer
-
-Testing the use of Google Earth Engine to explore satellite remote sensing data
 
 ---
 
@@ -68,5 +65,3 @@ Testing the use of Google Earth Engine to explore satellite remote sensing data
 * **Temporal Scope:** All data are monthly means/medians.
 * **Spatial Scope:** 30m (Landsat); 1km+ (MODIS, Sentinel-5P).
 * **Caveats:** Cloud cover, data quality, and atmospheric conditions may introduce gaps or biases. QA masks are recommended during analysis.
-
-For further details, see the full processing script or reach out for integration support.
