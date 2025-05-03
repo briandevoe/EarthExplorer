@@ -65,3 +65,51 @@
 * **Temporal Scope:** All data are monthly means/medians.
 * **Spatial Scope:** 30m (Landsat); 1km+ (MODIS, Sentinel-5P).
 * **Caveats:** Cloud cover, data quality, and atmospheric conditions may introduce gaps or biases. QA masks are recommended during analysis.
+
+
+
+## 🌱 Potential Indicators for Expansion
+
+These are additional spatial indicators under consideration to enhance linkage with the Child Opportunity Index (COI). Most are available from public satellite data via Google Earth Engine and can be computed monthly and at high resolution.
+
+### 🌊 Hydrologic & Environmental Hazards
+
+| Indicator         | Description                                              | GEE Source(s)                                   |
+|------------------|----------------------------------------------------------|-------------------------------------------------|
+| **Flood Risk**    | Persistent surface water changes or flood-prone zones    | `JRC/GSW1_3/MonthlyHistory`, Sentinel-1 SAR     |
+| **Fire Risk**     | Burned areas and active fire events                      | `MODIS/MCD64A1`, `FIRMS`, `VIIRS`               |
+| **Drought Index** | Evapotranspiration or soil moisture anomalies            | `MOD16A2`, `NASA/SMAP/SPL3SMP`                  |
+
+---
+
+### 🌡️ Climate Stressors
+
+| Indicator              | Description                                                  | Method / Source                            |
+|------------------------|--------------------------------------------------------------|--------------------------------------------|
+| **Temperature Anomaly**| Monthly LST deviation from 10-year climatology               | MODIS LST (`MOD11A2`) or Landsat LST       |
+| **Urban Heat Index**   | Combine high LST + low albedo to flag heat vulnerability     | `MODIS/MCD43A3` + LST                      |
+
+---
+
+### 🌫️ Atmospheric Pollution & Exposure
+
+| Indicator   | Description                                   | GEE Source                                |
+|-------------|-----------------------------------------------|-------------------------------------------|
+| **UV Index**| Potential UV exposure at surface              | `COPERNICUS/S5P/OFFL/L3_UVAI`             |
+| **SO₂**     | Sulfur dioxide, linked to industrial activity | `COPERNICUS/S5P/OFFL/L3_SO2`              |
+| **CH₄**     | Methane, from landfills, agriculture, etc.    | `COPERNICUS/S5P/OFFL/L3_CH4`              |
+
+---
+
+### 🏔️ Terrain & Elevation
+
+| Indicator     | Description                                    | GEE Source / Method               |
+|---------------|------------------------------------------------|-----------------------------------|
+| **Elevation** | Absolute elevation in meters above sea level   | `USGS/SRTMGL1_003`, `MERIT DEM`   |
+| **Slope**     | Degree of terrain steepness                    | Derived from DEM with `terrain()` |
+| **Sea Level Risk** | Tracts below flood-prone elevation threshold | Elevation mask + flood layers     |
+
+---
+
+> These metrics support analyses of environmental injustice, child health disparities, urban heat vulnerability, and disaster resilience across U.S. census tracts. Future development phases will test and integrate select indicators into the broader COI framework.
+
