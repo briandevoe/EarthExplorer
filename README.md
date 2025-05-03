@@ -157,12 +157,12 @@ FEMA and other federal agencies publish a wide array of disaster-related dataset
 #### 🚨 FEMA and Disaster Claims Datasets
 
 | Indicator                      | Description                                                                | Geography Level | Source                                                                                            |
-| ------------------------------ | -------------------------------------------------------------------------- | --------------- | ------------------------------------------------------------------------------------------------- |
-| **Flood Insurance Claims**     | Historical NFIP claims and payouts by ZIP or county                        | ZIP, County     | [FEMA/NFIP Claims](https://www.fema.gov/openfema-data-page/fima-nfip-redacted-claims)             |
-| **Disaster Declarations**      | Official FEMA disaster declarations including event type, region, and date | County          | [FEMA Declarations](https://www.fema.gov/api/open/v2/DisasterDeclarationsSummaries)               |
-| **Hazard Mitigation Grants**   | Grants for rebuilding and resilience efforts by project and location       | County          | [FEMA Mitigation Projects](https://www.fema.gov/openfema-data-page/hma-mitigated-properties)      |
-| **Fire Management Assistance** | Declarations and assistance for wildfire suppression and damage            | County          | [FEMA Fire Data](https://www.fema.gov/openfema-data-page/fire-management-assistance-declarations) |
-| **Individual Assistance Data** | Data on federal housing, repair, and disaster assistance                   | County          | [FEMA IA Program](https://www.fema.gov/data-visualization/individual-assistance-program)          |
+| ------------------------------ | -------------------------------------------------------------------------- | --------------- | -------------------------------------------------------------- |
+| **Flood Insurance Claims**     | Historical NFIP claims and payouts by ZIP or county                        | ZIP, County     | [FEMA datasets](https://www.fema.gov/about/openfema/data-sets) |
+| **Disaster Declarations**      | Official FEMA disaster declarations including event type, region, and date | County          | [FEMA datasets](https://www.fema.gov/about/openfema/data-sets) |
+| **Hazard Mitigation Grants**   | Grants for rebuilding and resilience efforts by project and location       | County          | [FEMA datasets](https://www.fema.gov/about/openfema/data-sets) |
+| **Fire Management Assistance** | Declarations and assistance for wildfire suppression and damage            | County          | [FEMA datasets](https://www.fema.gov/about/openfema/data-sets) |
+| **Individual Assistance Data** | Data on federal housing, repair, and disaster assistance                   | County          | [FEMA datasets](https://www.fema.gov/about/openfema/data-sets) |
 
 | Indicator                                       | Description                                                            | Geography Level | Source                                                     |
 | ----------------------------------------------- | ---------------------------------------------------------------------- | --------------- | ---------------------------------------------------------- |
