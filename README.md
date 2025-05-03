@@ -39,9 +39,17 @@ Testing the use of Google Earth Engine to explore satellite remote sensing data
 
 ### Notes on Data
 
+<<<<<<< HEAD
 * **Temporal Scope:** All variables are monthly means or medians.
 * **Spatial Resolution:** 30m (Landsat); 1–7km (MODIS, Sentinel-5P).
 * **Caveats:** Cloud cover, atmospheric conditions, and sensor differences can introduce bias. Use QA masks when possible.
+=======
+* **Temporal Scope:** All data are monthly means/medians.
+* **Spatial Scope:** 30m (Landsat); 1km+ (MODIS, Sentinel-5P).
+* **Caveats:** Cloud cover, data quality, and atmospheric conditions may introduce gaps or biases. QA masks are recommended during analysis.
+
+
+>>>>>>> 612f26ec73bc697ab6fb15704df500d69f29bd41
 
 ## 🌱 Potential Indicators for Expansion
 
@@ -49,41 +57,75 @@ These are additional spatial indicators under consideration to enhance linkage w
 
 ### 🌊 Hydrologic & Environmental Hazards
 
+<<<<<<< HEAD
 | Indicator         | Description                                           | GEE Source(s)                               |
 | ----------------- | ----------------------------------------------------- | ------------------------------------------- |
 | **Flood Risk**    | Persistent surface water changes or flood-prone zones | `JRC/GSW1_3/MonthlyHistory`, Sentinel-1 SAR |
 | **Fire Risk**     | Burned areas and active fire events                   | `MODIS/MCD64A1`, `FIRMS`, `VIIRS`           |
 | **Drought Index** | Evapotranspiration or soil moisture anomalies         | `MOD16A2`, `NASA/SMAP/SPL3SMP`              |
+=======
+| Indicator         | Description                                              | GEE Source(s)                                   |
+|------------------|----------------------------------------------------------|-------------------------------------------------|
+| **Flood Risk**    | Persistent surface water changes or flood-prone zones    | `JRC/GSW1_3/MonthlyHistory`, Sentinel-1 SAR     |
+| **Fire Risk**     | Burned areas and active fire events                      | `MODIS/MCD64A1`, `FIRMS`, `VIIRS`               |
+| **Drought Index** | Evapotranspiration or soil moisture anomalies            | `MOD16A2`, `NASA/SMAP/SPL3SMP`                  |
+>>>>>>> 612f26ec73bc697ab6fb15704df500d69f29bd41
 
 ---
 
 ### 🌡️ Climate Stressors
 
+<<<<<<< HEAD
 | Indicator               | Description                                              | Method / Source                      |
 | ----------------------- | -------------------------------------------------------- | ------------------------------------ |
 | **Temperature Anomaly** | Monthly LST deviation from 10-year climatology           | MODIS LST (`MOD11A2`) or Landsat LST |
 | **Urban Heat Index**    | Combine high LST + low albedo to flag heat vulnerability | `MODIS/MCD43A3` + LST                |
+=======
+| Indicator              | Description                                                  | Method / Source                            |
+|------------------------|--------------------------------------------------------------|--------------------------------------------|
+| **Temperature Anomaly**| Monthly LST deviation from 10-year climatology               | MODIS LST (`MOD11A2`) or Landsat LST       |
+| **Urban Heat Index**   | Combine high LST + low albedo to flag heat vulnerability     | `MODIS/MCD43A3` + LST                      |
+>>>>>>> 612f26ec73bc697ab6fb15704df500d69f29bd41
 
 ---
 
 ### 🌫️ Atmospheric Pollution & Exposure
 
+<<<<<<< HEAD
 | Indicator    | Description                                   | GEE Source                    |
 | ------------ | --------------------------------------------- | ----------------------------- |
 | **UV Index** | Potential UV exposure at surface              | `COPERNICUS/S5P/OFFL/L3_UVAI` |
 | **SO₂**      | Sulfur dioxide, linked to industrial activity | `COPERNICUS/S5P/OFFL/L3_SO2`  |
 | **CH₄**      | Methane, from landfills, agriculture, etc.    | `COPERNICUS/S5P/OFFL/L3_CH4`  |
+=======
+| Indicator   | Description                                   | GEE Source                                |
+|-------------|-----------------------------------------------|-------------------------------------------|
+| **UV Index**| Potential UV exposure at surface              | `COPERNICUS/S5P/OFFL/L3_UVAI`             |
+| **SO₂**     | Sulfur dioxide, linked to industrial activity | `COPERNICUS/S5P/OFFL/L3_SO2`              |
+| **CH₄**     | Methane, from landfills, agriculture, etc.    | `COPERNICUS/S5P/OFFL/L3_CH4`              |
+>>>>>>> 612f26ec73bc697ab6fb15704df500d69f29bd41
 
 ---
 
 ### 🏔️ Terrain & Elevation
 
+<<<<<<< HEAD
 | Indicator          | Description                                  | GEE Source / Method               |
 | ------------------ | -------------------------------------------- | --------------------------------- |
 | **Elevation**      | Absolute elevation in meters above sea level | `USGS/SRTMGL1_003`, `MERIT DEM`   |
 | **Slope**          | Degree of terrain steepness                  | Derived from DEM with `terrain()` |
+=======
+| Indicator     | Description                                    | GEE Source / Method               |
+|---------------|------------------------------------------------|-----------------------------------|
+| **Elevation** | Absolute elevation in meters above sea level   | `USGS/SRTMGL1_003`, `MERIT DEM`   |
+| **Slope**     | Degree of terrain steepness                    | Derived from DEM with `terrain()` |
+>>>>>>> 612f26ec73bc697ab6fb15704df500d69f29bd41
 | **Sea Level Risk** | Tracts below flood-prone elevation threshold | Elevation mask + flood layers     |
 
 ---
 
 > These metrics support analyses of environmental injustice, child health disparities, urban heat vulnerability, and disaster resilience across U.S. census tracts. Future development phases will test and integrate select indicators into the broader COI framework.
+<<<<<<< HEAD
+=======
+
+>>>>>>> 612f26ec73bc697ab6fb15704df500d69f29bd41
