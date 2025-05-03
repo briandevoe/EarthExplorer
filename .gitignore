@@ -172,3 +172,9 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Custom: Do not commit credentials or data exports
+client_secrets.json
+credentials.json
+data/
+

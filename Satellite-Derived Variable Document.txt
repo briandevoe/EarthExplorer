@@ -1,0 +1,73 @@
+**Satellite-Derived Variable Documentation for Environmental Indicators**
+
+This document provides descriptions and context for each of the remote sensing variables used in the `Nationwide Satellite Export` script. These variables are derived from Google Earth Engine (GEE) image collections and represent different environmental or urban conditions. Where applicable, the limitations and modeling assumptions are also noted.
+
+---
+
+### Vegetation and Land Use Indices
+
+**1. NDVI (Normalized Difference Vegetation Index)**
+**Source:** Landsat 9 (Bands 5 and 4)
+**Formula:** `(NIR - Red) / (NIR + Red)`
+**Description:** Measures vegetation health and greenness. Values near +1 indicate healthy green vegetation; values near 0 or negative indicate urban or barren land.
+
+**2. NDWI (Normalized Difference Water Index)**
+**Source:** Landsat 9 (Bands 3 and 5)
+**Formula:** `(Green - NIR) / (Green + NIR)`
+**Description:** Highlights water features and soil moisture. Useful for identifying surface water and wet areas.
+
+**3. NDBI (Normalized Difference Built-up Index)**
+**Source:** Landsat 9 (Bands 6 and 5)
+**Formula:** `(SWIR - NIR) / (SWIR + NIR)`
+**Description:** Detects built-up (urban) areas. High values suggest high-density construction or impervious surfaces.
+
+**4. LST (Land Surface Temperature)**
+**Source:** Landsat 9 Thermal Band 10
+**Formula:** `ST_B10 * 0.00341802 + 149.0`
+**Description:** Estimates surface temperature in Kelvin. Useful for heat exposure studies and urban heat island effects.
+
+**5. Turbidity Index**
+**Source:** Landsat 9 Green Band (SR\_B3)
+**Description:** A proxy measure for water turbidity, based on surface reflectance. Elevated reflectance suggests suspended sediments or algal presence. Not a direct measurement of pollutants.
+
+---
+
+### Air Quality and Atmospheric Variables
+
+**6. CO (Carbon Monoxide Concentration)**
+**Source:** Sentinel-5P (TROPOMI), `COPERNICUS/S5P/OFFL/L3_CO`
+**Description:** Indicates combustion sources such as wildfires, vehicles, and industrial emissions. High values may correlate with urban pollution or fire events.
+
+**7. NO2 (Nitrogen Dioxide Concentration)**
+**Source:** Sentinel-5P, `COPERNICUS/S5P/OFFL/L3_NO2`
+**Description:** A major urban pollutant. Strongly associated with vehicle emissions and industrial activity. Useful for studying respiratory health disparities.
+
+**8. OZONE (O3 Column Number Density)**
+**Source:** Sentinel-5P, `COPERNICUS/S5P/OFFL/L3_O3`
+**Description:** Measures ozone concentration in the atmosphere. Elevated levels at ground level are harmful to health and contribute to smog.
+
+**9. AOD (Aerosol Optical Depth)**
+**Source:** MODIS, `MODIS/006/MCD19A2_Optical_Depth_Land`
+**Variable:** `Optical_Depth_Land_Mean_Mean`
+**Description:** Measures the extinction of sunlight by aerosols in the atmosphere. Correlated with particulate matter (e.g., PM2.5). **Proxy for PM2.5** — not a direct measurement but often used in models estimating fine particle pollution. Spatial resolution and retrieval may vary by region and cloud conditions.
+
+---
+
+### Infrastructure and Activity
+
+**10. Nighttime Lights (VIIRS Radiance)**
+**Source:** VIIRS-DNB (Day/Night Band), `NOAA/VIIRS/DNB/MONTHLY_V1/VCMSLCFG`
+**Variable:** `avg_rad`
+**Description:** Indicates human presence, infrastructure, and economic activity. High radiance values correspond to urban centers, roads, and electrified regions.
+
+---
+
+### Notes on Data Use
+
+* **Temporal Aggregation:** All variables are monthly composites (means or medians).
+* **Spatial Resolution:** Most variables are at 30m (Landsat) or coarser for atmospheric datasets (MODIS: 1km+, Sentinel-5P: 7km).
+* **Limitations:** Cloud cover, spatial gaps, or sensor artifacts may affect quality. Always consider QA masks or anomaly screening during post-processing.
+
+---
+
+For questions about how to use these data with census tracts, modeling, or visualization, see the companion processing script or reach out for integration support.
