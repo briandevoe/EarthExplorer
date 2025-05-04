@@ -107,11 +107,13 @@ These are additional spatial indicators under consideration to enhance linkage w
 
 ### 🌊 Hydrologic & Environmental Hazards
 
-| Indicator         | Description                                           | GEE Source(s)                               |
-| ----------------- | ----------------------------------------------------- | ------------------------------------------- |
-| **Flood Risk**    | Persistent surface water changes or flood-prone zones | `JRC/GSW1_3/MonthlyHistory`, Sentinel-1 SAR |
-| **Fire Risk**     | Burned areas and active fire events                   | `MODIS/MCD64A1`, `FIRMS`, `VIIRS`           |
-| **Drought Index** | Evapotranspiration or soil moisture anomalies         | `MOD16A2`, `NASA/SMAP/SPL3SMP`              |
+| Indicator                       | Description                                           | GEE Source(s)                               |
+| ------------------------------- | ----------------------------------------------------- | ------------------------------------------- |
+| **Flood Risk**                  | Persistent surface water changes or flood-prone zones | `JRC/GSW1_3/MonthlyHistory`, Sentinel-1 SAR |
+| **Fire Risk**                   | Burned areas and active fire events                   | `MODIS/MCD64A1`, `FIRMS`, `VIIRS`           |
+| **Drought Index**               | Evapotranspiration or soil moisture anomalies         | `MOD16A2`, `NASA/SMAP/SPL3SMP`              |
+| **Tornado Frequency**           | Spatial distribution of tornado events by tract       | NOAA/SPC Storm Events, IBTrACS              |
+| **Hurricane Landfall Exposure** | Tract-level exposure to hurricane wind/rain           | NOAA HURDAT2, IBTrACS                       |
 
 ---
 
