@@ -164,13 +164,14 @@ FEMA and other federal agencies publish a wide array of disaster-related dataset
 | **Fire Management Assistance** | Declarations and assistance for wildfire suppression and damage            | County          | [FEMA datasets](https://www.fema.gov/about/openfema/data-sets) |
 | **Individual Assistance Data** | Data on federal housing, repair, and disaster assistance                   | County          | [FEMA datasets](https://www.fema.gov/about/openfema/data-sets) |
 
-| Indicator                                       | Description                                                            | Geography Level | Source                                                     |
-| ----------------------------------------------- | ---------------------------------------------------------------------- | --------------- | ---------------------------------------------------------- |
-| **Child Opportunity Index (COI)**               | Composite measure of neighborhood-level opportunity for children       | Tract           | diversitydatakids.org                                      |
-| **Social Vulnerability Index (SVI)**            | CDC’s metric of community resilience to disasters and hardship         | Tract, County   | CDC/ATSDR                                                  |
-| **Opportunity Atlas (OA)**                      | Economic mobility measures by childhood neighborhood                   | Tract           | opportunityatlas.org                                       |
-| **Zoning Restrictions (National Zoning Atlas)** | Classifies local zoning codes by land use and restrictiveness          | Municipality    | [https://www.zoningatlas.org](https://www.zoningatlas.org) |
-| **Healthcare Access Scores**                    | Distance to hospitals, emergency care, or clinics                      | Tract/ZIP       | HRSA, ACS-derived                                          |
+| Indicator                                       | Description                                                            | Geography Level      | Source                                                     |
+| ----------------------------------------------- | ---------------------------------------------------------------------- | -------------------- | ---------------------------------------------------------- |
+| **Child Opportunity Index (COI)**               | Composite measure of neighborhood-level opportunity for children       | Tract                | diversitydatakids.org                                      |
+| **Social Vulnerability Index (SVI)**            | CDC’s metric of community resilience to disasters and hardship         | Tract, County        | CDC/ATSDR                                                  |
+| **Opportunity Atlas (OA)**                      | Economic mobility measures by childhood neighborhood                   | Tract                | opportunityatlas.org                                       |
+| **Zoning Restrictions (National Zoning Atlas)** | Classifies local zoning codes by land use and restrictiveness          | Municipality         | [https://www.zoningatlas.org](https://www.zoningatlas.org) |
+| **Healthcare Access Scores**                    | Distance to hospitals, emergency care, or clinics                      | Tract/ZIP            | HRSA, ACS-derived                                          |
+| **Redlining Maps (HOLC Grades)**                | Historical neighborhood risk grades (A–D) from HOLC                    | Neighborhood / Tract | [Mapping Inequality Project](https://dsl.richmond.edu/panorama/redlining) |
 
 | Indicator          | Description                                  | GEE Source / Method               |
 | ------------------ | -------------------------------------------- | --------------------------------- |
