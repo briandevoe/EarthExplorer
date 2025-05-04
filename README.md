@@ -231,3 +231,22 @@ The following public datasets provide validated and spatially-resolved indicator
 | **CDC PLACES**                   | Chronic disease and health behavior estimates                | Census tract     | [CDC PLACES](https://www.cdc.gov/places/) |
 | **HUD Environmental Health Index** | Exposure to toxins, air quality, traffic burden            | Census tract     | [HUD EH Index](https://hudgis-hud.opendata.arcgis.com/datasets/c7e2c62560bd4a999f0e0b2f4cee2494_19/about) |
 
+
+
+
+### Normalized Difference Indexes
+| Index     | Full Name                                      | Purpose / What it Detects               | Common Bands Used |
+| --------- | ---------------------------------------------- | --------------------------------------- | ----------------- |
+| **NDVI**  | Normalized Difference Vegetation Index         | Green vegetation                        | NIR, Red          |
+| **NDBI**  | Normalized Difference Built-up Index           | Urbanization / impervious surface       | SWIR, NIR         |
+| **NDWI**  | Normalized Difference Water Index              | Surface water                           | NIR, Green        |
+| **MNDWI** | Modified NDWI                                  | Improved water detection in urban areas | Green, SWIR       |
+| **NDSI**  | Normalized Difference Snow Index               | Snow cover                              | Green, SWIR       |
+| **NDMI**  | Normalized Difference Moisture Index           | Vegetation water content                | NIR, SWIR         |
+| **NBR**   | Normalized Burn Ratio                          | Burned area severity                    | NIR, SWIR         |
+| **NBR2**  | Normalized Burn Ratio 2                        | High-temperature burn detection         | SWIR1, SWIR2      |
+| **NDGI**  | Normalized Difference Greenness Index          | Similar to NDVI, emphasizes greenness   | Green, Red        |
+| **NDPI**  | Normalized Difference Pond Index               | Small water bodies                      | Blue, SWIR        |
+| **NDISI** | Normalized Difference Impervious Surface Index | Urban imperviousness                    | NIR, SWIR         |
+
+
