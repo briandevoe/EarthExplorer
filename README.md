@@ -205,4 +205,29 @@ FEMA and other federal agencies publish a wide array of disaster-related dataset
 | **LEHD LODES Data**                | Home-to-work commute flows by block                     | U.S. Census Bureau                 |
 
 
+## 🧪 Additional Environmental, Disaster, and Health Indicators
+
+The following public datasets provide validated and spatially-resolved indicators that can enhance or replace lower-resolution or proxy measures in this project:
+
+### 🌿 Environmental & Pollution Indicators
+
+| Indicator                        | Description                                                | Geography        | Source |
+|----------------------------------|------------------------------------------------------------|------------------|--------|
+| **EPA EnviroAtlas**              | Green space, impervious surface, heat, ecosystem services  | Census tract     | [EPA EnviroAtlas](https://www.epa.gov/enviroatlas/data-download) |
+| **EPA EJScreen**                 | Diesel PM, hazardous waste proximity, traffic, lead risk   | Census tract     | [EPA EJScreen](https://www.epa.gov/ejscreen) |
+| **CDC Environmental Tracking**   | Modeled ozone and PM2.5 air quality estimates              | Census tract     | [CDC Tracking Network](https://www.cdc.gov/nceh/tracking/) |
+
+### 🌪️ Disaster and Climate Risk
+
+| Indicator                        | Description                                                | Geography        | Source |
+|----------------------------------|------------------------------------------------------------|------------------|--------|
+| **FEMA National Risk Index**     | Earthquake, flood, hurricane, wildfire, and drought risk   | Census tract     | [FEMA NRI](https://resilience.climate.gov/datasets/FEMA::national-risk-index-census-tracts/about) |
+| **CEJST Tool**                   | Identifies climate-disadvantaged communities               | Census tract     | [CEJST Methodology](https://edgi-govdata-archiving.github.io/j40-cejst-2/en/methodology/) |
+
+### 🏥 Health and Socioeconomic Data
+
+| Indicator                        | Description                                                  | Geography        | Source |
+|----------------------------------|--------------------------------------------------------------|------------------|--------|
+| **CDC PLACES**                   | Chronic disease and health behavior estimates                | Census tract     | [CDC PLACES](https://www.cdc.gov/places/) |
+| **HUD Environmental Health Index** | Exposure to toxins, air quality, traffic burden            | Census tract     | [HUD EH Index](https://hudgis-hud.opendata.arcgis.com/datasets/c7e2c62560bd4a999f0e0b2f4cee2494_19/about) |
 
