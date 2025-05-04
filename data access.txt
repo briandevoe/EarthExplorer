@@ -1,0 +1,37 @@
+# Google Earth Engine
+| Indicator                    | GEE Collection / Source                      |
+| ---------------------------- | -------------------------------------------- |
+| NDVI / NDBI / NDWI           | Landsat 5/8/9                                |
+| Land Surface Temperature     | Landsat Collection 2 (LST band)              |
+| True Color (RGB)             | Landsat (bands B4, B3, B2 or equivalent)     |
+| Turbidity (approximate)      | Derived from visible Landsat bands           |
+| CO, NO₂, SO₂, O₃, CH₄, AOD   | Sentinel-5P (COPERNICUS/S5P) or MODIS AOD    |
+| Night Lights                 | VIIRS/DNB Monthly Composites                 |
+| Albedo                       | MODIS MCD43A3                                |
+| Elevation, Slope             | USGS/SRTMGL1\_003, GEE terrain()             |
+| Urban Heat (LST + Albedo)    | Derived combo                                |
+| Flood Mapping                | Sentinel-1 SAR or JRC/GSW                    |
+| Fire Detection / Burned Area | MODIS MCD64A1 or FIRMS/VIIRS                 |
+| Vegetation Change / Drought  | MODIS NDVI, MOD16A2 ET anomalies             |
+| Temperature Anomaly          | MODIS or Landsat historical mean subtraction |
+| UV Index                     | COPERNICUS/S5P UVAI                          |
+
+# Separate API
+| Indicator / Dataset             | Access Method                                         |
+| ------------------------------- | ----------------------------------------------------- |
+| **EPA EnviroAtlas**             | EPA download site (shapefiles, CSV)                   |
+| **EPA EJScreen**                | EPA JSON/CSV files (API or zip)                       |
+| **CDC Environmental Tracking**  | CSV downloads                                         |
+| **FEMA National Risk Index**    | Resilience.gov (CSV by tract)                         |
+| **CEJST Tool**                  | CSV/GeoJSON from CEJST.gov                            |
+| **CDC PLACES**                  | Tract-level CSV download                              |
+| **HUD EH Index**                | Shapefile or CSV from HUD Open Data                   |
+| **Zoning Atlas**                | State-level shapefiles (downloadable)                 |
+| **Redlining Data (HOLC)**       | GeoJSON from Mapping Inequality site                  |
+| **FEMA Flood Insurance Claims** | CSV from OpenFEMA (ZIP/lat/lon)                       |
+| **GTFS Transit Feeds**          | Public transit agencies or transit.land               |
+| **OpenStreetMap (OSM)**         | Overpass API, Geofabrik, or Python tools like `osmnx` |
+| **AllTransit Metrics**          | CNT API or CSV (limited public access)                |
+| **Walk Score API**              | API key needed (commercial)                           |
+
+
