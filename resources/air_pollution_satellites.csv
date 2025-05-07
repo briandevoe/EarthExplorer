@@ -1,0 +1,12 @@
+Satellite / Instrument,Pollutants Measured,Spatial Resolution,Temporal Resolution,API Access (GEE or other)
+Sentinel-5P (TROPOMI),"NO2, SO2, CO, O3, CH4, HCHO, aerosols",~3.5x7 km (now ~5.5 km^2),Daily (global),Yes - Google Earth Engine (GEE)
+AURA (OMI),"NO2, SO2, O3, HCHO, aerosols",~13x24 km,Daily (global),Yes - Google Earth Engine (GEE)
+Terra (MODIS),Aerosol Optical Depth (AOD),"1 km (aerosols), 10 km (AOD)",1-2 days (morning),Yes - Google Earth Engine (GEE)
+Aqua (MODIS),Aerosol Optical Depth (AOD),"1 km (aerosols), 10 km (AOD)",1-2 days (afternoon),Yes - Google Earth Engine (GEE)
+Suomi NPP (OMPS),"O3, SO2, aerosols",~50x50 km,Daily,"Yes - NOAA CLASS, not in GEE"
+GOME-2 (MetOp),"NO2, SO2, O3, CHOCHO, HCHO, BrO, aerosols",~40x80 km,Daily (global),"Partially - EUMETSAT APIs, not in GEE"
+TEMPO,"NO2, SO2, O3, HCHO, aerosols",~2.1-10 km,"Hourly (daytime, North America)",Yes - Hosted on GEE
+GEMS (GEO-KOMPSAT-2B),"NO2, SO2, O3, HCHO, aerosols",~7 km,"Hourly (daytime, Asia)",No public API yet (regional access)
+IASI (MetOp-A/B/C),"CO, CH4, NH3, O3, aerosols",~12 km,Twice daily,Partially - EUMETSAT APIs
+CALIPSO (CALIOP),Aerosol vertical profiles,~0.33 km horizontal; 30-60 m vertical,~16-day cycle,Yes - GEE via NASA/ESA
+OMPS (NOAA JPSS),"O3 profile, aerosols",~50 km (nadir); 250 km (limb),Daily,Yes - GEE (subset only)
