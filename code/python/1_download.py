@@ -16,7 +16,7 @@ ee.Initialize(project="ee-testing-458522")  # replace with your GCP project ID
 # 1. Settings: States and Monthly Ranges
 # ---------------------------------------------------------------------
 states = [
-    "Massachusetts", "New Hampshire"
+    "Ohio"
 ]  # New England states
 
 # Generate all months in 2024
