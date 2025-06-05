@@ -115,11 +115,11 @@ for state in states:
         # Launch exports
         tasks = {
             "NDVI": export_to_drive(ndvi, "NDVI"),
-            "NDWI": export_to_drive(ndwi, "NDWI"),
+            #"NDWI": export_to_drive(ndwi, "NDWI"),
             "NDBI": export_to_drive(ndbi, "NDBI"),
-            "LST": export_to_drive(lst, "LST"),
+            #"LST": export_to_drive(lst, "LST"),
             #"TrueColor": export_to_drive(true_color, "TrueColor_RGB"),
-            "Turbidity": export_to_drive(turbidity, "Turbidity"),
+            #"Turbidity": export_to_drive(turbidity, "Turbidity"),
             "CO": export_to_drive(co, "CO"),
             "NO2": export_to_drive(no2, "NO2"),
             "OZONE": export_to_drive(ozone, "OZONE"),
