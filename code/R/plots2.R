@@ -5,15 +5,15 @@ library(ggspatial)
 library(stringr)
 
 # Define folder containing exported GeoTIFFs
-folder_path <- "C:/Users/bdevoe/Desktop/aod_exports3"
+folder_path <- "C:/Users/bdevoe/Desktop/Remote Sensing/data and scripts/ndvi/sentinel/NDVI_S2_MA_2021/"
 
 # List all GeoTIFF files
-file_list <- list.files(folder_path, pattern = "\\.tif$", full.names = TRUE)
+file_list <- list.files(folder_path, full.names = TRUE)
 
 # Extract state and year from filenames
 extract_metadata <- function(file_path) {
   fname <- basename(file_path)
-  matches <- str_match(fname, "aod_raster_([a-z_]+)_(\\d{4})\\.tif")
+  matches <- str_match(fname, "aod_raster_([a-z_]+)_(//d{4})//.tif")
   list(state = str_to_title(gsub("_", " ", matches[2])), year = as.integer(matches[3]))
 }
 
